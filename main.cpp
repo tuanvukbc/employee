@@ -1,13 +1,10 @@
-#include "employee.h"
-#include<bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-
 int main()
 {
-    cout<<"ngu"<<endl;
-    int employeeManager();
+    void employeeManager();
     employeeManager();
     return 0;
 }
