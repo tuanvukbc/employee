@@ -17,7 +17,7 @@ private:
     string birthday;
     string adress;
     string team;
-    Date_attendance Date[31];
+    Date_attendance date[31];
 public:
     Employee();
     Employee(int id, string name, string birthday, string adress, string team);
@@ -26,7 +26,7 @@ public:
     void setBirthday(string birthday);
     void setAdress(string adress);
     void setTeam(string team);
-    void setDate(Date_attendance Date);
+    void setDate(Date_attendance date);
 
     friend void writeDataToFile(string file);
     string getId();
