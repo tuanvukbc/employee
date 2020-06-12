@@ -11,8 +11,8 @@ class Date_attendance
 {
 public:
 
-    string Date;
-    string Trang_thai;
+    string date;
+    string status;
 
 };
 int format_tt(string tt);
