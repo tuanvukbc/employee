@@ -82,13 +82,14 @@ void getDatacsv(string file)
             //check trong file(Chua code)
 
         }
-        myfile << e.id << "," << e.name << "," << e.birthday << "," << e.adress << "," << e.team;
-        for (int i = 0; i < n; i++)
-        {
-            myfile << ',' << e.date[i].date << ':' << e.date[i].status;
-            if (i == n - 1)myfile << endl;
-        }                                                                                                  // iN RA CO DANG mAC,Nguyen Tien Dat,20 01 2001,42,admin10 02 2020:N,12 8 2020:DL
-    }
+        string filepath = "C:/Users/Tuan Vu/Desktop/ImportData.txt";
+                ofstream read(filepath, ios::app);
+                read << e.id << "," << e.name << "," << e.birthday << "," << e.adress << "," << e.team;
+                for (int i = 0; i < n; i++)
+                {
+                    read << ',' << e.date[i].date << ':' << e.date[i].status;
+                    if (i == n - 1)read << endl;
+                }                            
     else cout << "Mo file that bai. TIP: Kiem tra duong dan hoac Chay chuong trinh voi quyen admin\n";
 
 }
