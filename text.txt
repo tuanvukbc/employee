@@ -1,2 +1,0 @@
-01,Luong Tuan Vu,27 11 1999,Ha Noi,Nhan vien
-02,Le Van Tuong,14 05 1999,Vinh,Nhan vien
