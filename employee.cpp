@@ -100,9 +100,9 @@ Employee searchEmployee(string file, string id)
     return e;
 }
 
-int valiDate(string Date)
+int valiDate(string date)
 {
-    stringstream ss(Date);
+    stringstream ss(date);
     int day, month, year;
 
     ss >> day >> month >> year;
