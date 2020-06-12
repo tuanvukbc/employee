@@ -233,7 +233,7 @@ void MENU()
 void employeeManager()
 {
 
-    string filePath = "C:/Users/Tuan Vu/Desktop/text.txt";
+    string filePath = "C:/Users/Tuan Vu/Desktop/ImportData.csv";
     int choice;
     char y ='c';
 
@@ -272,7 +272,7 @@ void employeeManager()
         case 3:
         {
             cout << "Dang doc du lieu tu file cvs\n";
-            string filepath = "C:/Users/Tuan Vu/Desktop/ImportData";                            // file cvs , filepath = "Duong dan file "
+            string filepath = "C:/Users/Tuan Vu/Desktop/ImportData.csv";
             getDatacsv(filepath);
             break;
         }
