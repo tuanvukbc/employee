@@ -1,5 +1,25 @@
 #include "other.h"
 
+void Other::Print(Employee p)													// Ham In ra thong tin (Bai 2)
+{
+    cout << "Ma NV: " << p.getid() << endl;
+    cout << "Ten NV: " << p.getname() << endl;
+    cout << "Ngay thang nam sinh: " << p.getbirth() << endl;
+    cout << "Dia chi: " << p.getadress() << endl;
+    cout << "Bo phan cong tac: " << p.getteam() << endl;
+    if (p.getcheck() == 0)
+    {
+        cout << "Khong co du lieu diem danh cua nhan vien" << endl;
+    }
+    else
+    {
+        int n = p.getcheck();
+        for (int i = 0; i < n; i++)
+        {
+            p.getdd(i);
+        }
+    }
+}
 void Other::setFile(string file)
 {
     this->file = file;
