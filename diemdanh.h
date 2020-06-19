@@ -4,19 +4,19 @@
 #pragma once
 #include<bits/stdc++.h>
 #include"date.h"
-#include"employee.h"
+#include "employee.h"
+#include "person.h"
 using namespace std;
 
 class Diemdanh :public Date		// DIEMDANH // DELi CLASS
 {
 private:
-    string file ;
     string Trangthai;
 public:
-    Diemdanh();
+    void diemdanh();
+    string get_tt();
     int checl_tt(string tt);// Kiem tra trang thai di lam
-    void history(Employee a); // Luu qua trinh diem danh ra mot file rieng roi cho xuat ra man hinh
-    ~Diemdanh();
+    void set_tt(string trangthai);
 };
 
 #endif // DIEMDANH_H
