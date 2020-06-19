@@ -29,3 +29,7 @@ int Check::checkid(string id)  // Kiem tra xem co trung ma Nhan Vien khong
     }
     return 1;
 }
+Check::Check()
+{
+    this->file = "text.txt";
+}
