@@ -10,8 +10,10 @@ class Check
 private:
     string file;
 public:
+     Check();
      void setFILE(string name);
      int checkid(string id);  // Kiem tra xem co trung ma Nhan Vien khong
      int checkdd(string dd);
 };
+
 #endif // CHECK_H
