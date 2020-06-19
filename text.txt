@@ -1,0 +1,6 @@
+1,abc,14 5 1999,hanoi,SYSTEM,0
+12,Le Van Tuong,14 05 1999,HaNOI,WEB,0
+19,dsdsfsd,14 05 1999,HaNOi,WEb,0
+012,Le Vam Tuong,14 05 1999,Ha Noi,WEB,0
+145,Le Van Huy,29 2 2019,Ha Noi,SYSTEM,0
+2,LUong Tuan Vu,27 11 1999,Ha Noi,Web,0
