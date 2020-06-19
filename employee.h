@@ -1,47 +1,34 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-
 #pragma once
 #include<bits/stdc++.h>
-#include"date_attendance.h"
-
-
+#include"diemdanh.h"
+#include"check.h"
+#include"search.h"
 using namespace std;
 
-class Employee
+class Employee :public Person // Deli CLASS
 {
 private:
     string id;
-    string name;
-    string birthday;
-    string adress;
     string team;
-    Date_attendance date[31];
+    string file;        //Da co file san text.txt
+    int check = 0; // so ngay diem danh duoc luu vao ;
+    Diemdanh* cr = new Diemdanh[31];
 public:
-    Employee();
-    Employee(int id, string name, string birthday, string adress, string team);
-    void setId(string id);
-    void setName(string name);
-    void setBirthday(string birthday);
-    void setAdress(string adress);
-    void setTeam(string team);
-    void setDate(Date_attendance date);
 
-    friend void writeDataToFile(string file);
-    string getId();
-    string getName();
-    string getBirthday();
-    string getAdress();
-    string getTeam();
-    friend void getDatacsv(string file);
+    void setcheck(int n);
+    void nhap();
+    string getid();
+    int getcheck();
+    void getdd(int i);				// Trang thai diem danh, neu Nghi se danh dau X
+    string getddall(int i);		//Lay THong tin trang thai diem danh
+    string getteam();
+    void setid(string id);
+    void setteam(string team,int i);
+    void diemdanh(int i,string date,string TT);
 
 };
-Employee searchEmployee(string file, string id);
-void writeDataToFile(string file);
-int valiDate(string Date);
-int testId(string file, string id);
-void getDatacsv(string filepath);
-void print(Employee e);
 
 #endif // EMPLOYEE_H
