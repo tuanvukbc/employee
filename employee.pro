@@ -4,14 +4,22 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        Date.cpp \
-        Employee.cpp \
-        employeemanager.cpp \
+        check.cpp \
+        date.cpp \
+        diemdanh.cpp \
+        employee.cpp \
         main.cpp \
-        person.cpp
+        menu.cpp \
+        other.cpp \
+        person.cpp \
+        search.cpp
 
 HEADERS += \
-    Date.h \
-    Employee.h \
-    employeemanager.h \
-    person.h
+    check.h \
+    date.h \
+    diemdanh.h \
+    employee.h \
+    menu.h \
+    other.h \
+    person.h \
+    search.h
